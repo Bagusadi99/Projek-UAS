@@ -5,3 +5,7 @@ const registerLink = document.querrySelection('.register-box');
 registerLink.addEventListener('click', () => {
     logregBox.classList.add('active');
 });
+
+loginLink.addEventListener('click', () => {
+    logregBox.classList.remove('active');
+});

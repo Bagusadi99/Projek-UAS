@@ -161,6 +161,7 @@ transform: scale(1.2);
     top: 0;
     right: 0;
     height: 100%;
+    overflow: hidden;
 }
 
 .logreg-box ,form-box {
@@ -180,6 +181,7 @@ transform: scale(1.2);
 .logreg-box .form-box.login {
     transform: translateX(0);
     transition: transform .6s ease;
+    transition-delay: .7s;
 }
 
 .logreg-box.active .form-box.login {
@@ -189,10 +191,13 @@ transform: scale(1.2);
 
 .logreg-box .form-box.register {
     transform: translateX(430px);
+    transition: transform .6s ease;
+    transition-delay: 0s;
 }
 
-.logreg-box .form-box.register {
-    transform: translateX(430px);
+.logreg-box.active .form-box.register {
+    transform: translateX(0);
+    transition-delay: .7s;
 }
 
 .form-box h2 {
